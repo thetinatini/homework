@@ -1,0 +1,6 @@
+first_name = input("Tina")
+last_name = input("Tevdoradze")
+first_name = first_name.strip().capitalize()
+last_name = last_name.strip().capitalize()
+print("First_name:", first_name)
+print("Last_name:", last_name)
