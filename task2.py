@@ -1,5 +1,15 @@
-word = "my favorite thing is Python"      
-word = "my favorite language is Python"
+# DEFINE VARIABLES
+n = int(input ("please enter the number: "))
+sum = 0
 
-print(word[-6:])
-print(word[-16:])
+
+# START FOR LOOP - CODE RUNS FOR EACH NUMBER
+for i in range (1 , n):
+
+    # CHECK IF IT IS EVEN
+    if i % 2 == 0:
+
+        #print ("This is i: ", i)
+        sum += i
+        print ("This is sum: ", sum)
+

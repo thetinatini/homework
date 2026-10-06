@@ -1,6 +1,20 @@
-first_name = input("Tina")
-last_name = input("Tevdoradze")
-first_name = first_name.strip().capitalize()
-last_name = last_name.strip().capitalize()
-print("First_name:", first_name)
-print("Last_name:", last_name)
+# DEFINE VARIABLES
+pin = 1234
+tries = 0
+
+# WHILE LOOP
+while tries < 3:
+    password = input("Please enter the password right now sir:")
+    tries += 1
+
+    # CHECK IF PASSWORD IS CORRECT
+    if password == str(pin):
+        print("Access granted")
+        # END PROGRAM
+        break
+    # USER ENTERED INCORRECT PASSWORD
+    else:
+        if tries >= 3:
+            print("Card blocked!")
+        print("Incorrect PIN. Remaining attempts:", 3 - tries)
+
