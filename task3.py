@@ -1,18 +1,17 @@
-#DEFINE VARIABLES
+#Create list of locations
+locations = [
+    ("Tbilisi, 41.71, 44.82"),
+    ("Batumi, 41.64, 41.63"),
+    ("Kutaisi, 42.26, 42.71")
+]
 
-#ASK USER FOR INPUT
-txt = input ("please enter the text: ")
-#print("This is the input: ", txt)
+for location in locations:
+    print("City:",location[0],", Latitude:",location[1],", Longitude:",location[2])
 
-# START FOR LOOP - CODE RUNS FOR EACH CHARACTER
-for i in txt:
-    #CHECK IF CHARACTER IS A DIGIT
-    if i.isdigit():
-        #REPLACE CHARACTER WITH NOTHING
-        txt = txt.replace(i, "")
+#create new list
+city_names = []
 
-    else:
-        continue
-
-# PRINT OUTPUT
-print("This is the output: ", txt)
+for location in locations:
+    city_names.append(location[0])
+    
+print("City names:", city_names)

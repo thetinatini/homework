@@ -1,15 +1,16 @@
-# DEFINE VARIABLES
-n = int(input ("please enter the number: "))
-sum = 0
+#Create inventory list
+inventory = ["apple", "banana", "orange", "apple", "kiwi", "apple"]
 
+#ceate new items list
+new_items = ["mango", "grape"]
 
-# START FOR LOOP - CODE RUNS FOR EACH NUMBER
-for i in range (1 , n):
+#print number of apples using .count()
+print("there are" , inventory.count("apple"), "apples in the inventory rihght now.")
 
-    # CHECK IF IT IS EVEN
-    if i % 2 == 0:
+#print index (location) of orange using.index()
+print("orange is in index number", inventory.index("orange"), "in the inventory right now.")
 
-        #print ("This is i: ", i)
-        sum += i
-        print ("This is sum: ", sum)
+#add new list to end of inventory list using .extend()
+inventory.extend(new_items)
 
+print (inventory[::-1]) #print inventory in reverse order
